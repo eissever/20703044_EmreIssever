@@ -1,0 +1,41 @@
+.acilirmenu{
+  width:180px;
+  height:auto;
+}
+.acilirmenu ul{
+  width:180px;
+  margin:0;
+  padding:0;
+  list-style-type:none;   
+}
+.acilirmenu li{
+  position: relative;
+}
+.acilirmenu li ul{
+  position:absolute;
+  list-style-type:none;
+  left:179px;
+  width:180px;
+  display:none;
+  top:0;    
+}
+.acilirmenu li a{
+  height:30px;
+  display: block;
+  text-decoration: none;
+  background-color: #3EA3AD;
+  color:#FFF;
+  font:500 15px Verdana;
+  padding:5px;
+  border:1px solid #FFF;
+  border-bottom:0; 
+  text-align: center;
+  line-height: 30px;
+}
+.acilirmenu li a:hover{
+  background-color:#52BEAA;
+  color:#FF0;
+}
+.acilirmenu li:hover ul{
+  display:block;
+}

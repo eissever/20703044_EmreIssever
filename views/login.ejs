@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<head>
+    <title>Oturum açınız..</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="/assets/js/PureSnow.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(173, 126, 126, 0);
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(82,14,159,1) 0%, rgba(35,111,221,1) 100%);
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    padding: 50px;
+}
+
+.container {
+    background-color: #212121;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    /*box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175);*/
+    border-radius: 3px;
+}
+
+.container h1 {
+    color: white;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+input,
+button {
+    font-family: "Ubuntu", sans-serif;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+}
+
+.input:hover {
+    border-color: #999999;
+}
+
+.input:focus {
+    border-color: #000000;
+}
+
+
+
+.link {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    color: #3da4fc;
+    border: 1px solid #3da4fc;
+    border-radius: 3px;
+    padding: 12px 0;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-top: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.link:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #3da4fc;
+    color: #ffffff;
+    
+}
+
+.giris{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    color: #2ab300;
+    border: 1px solid #2ab300;
+    border-radius: 3px;
+    padding: 12px 0;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-top: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.giris:hover{
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #2ab300;
+    color: #ffffff;
+}
+
+.kayit{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    color: #db0000;
+    border: 1px solid #db0000;
+    border-radius: 3px;
+    padding: 12px 0;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-top: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.kayit:hover{
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #db0000;
+    color: #ffffff;
+}
+
+.anasayfa{
+    display: inline-block;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    color: #00bcd4;
+    border: 1px solid #00bcd4;
+    border-radius: 3px;
+    padding: 12px 0;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.anasayfa:hover{
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #00bcd4;
+    color: #ffffff;
+}
+
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+
+.success-msg,
+.err-msg {
+    color: #db0016;
+    border: 1px solid #db0016;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.success-msg {
+    color: #ffffff;
+    background-color: #42d100;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile .img {
+    font-size: 50px;
+}
+
+.profile h2 {
+    color: white;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+}
+
+.isim{
+    color: white;
+}
+
+.profile span {
+    display: block;
+    margin-bottom: 20px;
+    color: #999999;
+}
+
+.profile a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #db0000;
+    color: #db0000;
+    border-radius: 3px;
+}
+
+.profile a:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #db0000;
+    color: #ffffff;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Lütfen giriş yapınız...</h1>
+    <form action="" method="POST">
+        <label for="user_username">Kullanıcı adı</label>
+        <input type="text" class="input" name="_username" autocomplete="off" id="user_username" placeholder="Kullanıcı adınızı giriniz">
+        <label for="user_pass">Şifre</label>
+        <input type="password" class="input" name="_password" id="user_pass" placeholder="Şifrenizi giriniz">
+        <% if(typeof error !== 'undefined'){ %>
+        <div class="err-msg"><%= error %></div><% } %>
+        <input class="giris" type="submit" value="Giriş">
+        <a class="kayit" href="./signup">Kayıt ol</a>
+        <a class="anasayfa" href="/anasayfa">Anasayfa</a></div>
+        
+    </form>
+</div>
+</body>
+
